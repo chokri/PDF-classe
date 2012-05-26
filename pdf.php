@@ -1,12 +1,7 @@
 <?php
 require('pdf/fpdf.php');
 /*
-*
-* Class créé par chokri khalifa
-* 
-*
-*
-*
+* Class créé par chokri khalifa, http://khalifa-chokri.com
 */
 class PDF extends FPDF{
 var $B;

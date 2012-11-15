@@ -2,6 +2,7 @@
 require('pdf/fpdf.php');
 /*
 * Class créé par chokri khalifa, http://khalifa-chokri.com
+* déja modifié
 */
 class PDF extends FPDF{
 var $B;

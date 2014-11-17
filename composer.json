@@ -1,0 +1,14 @@
+{
+    "name": "chokri/pdf-classe",
+    "description": "PDF creator",
+    "require": {
+        "uam/tcpdfx": "~4.0"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Khalifa chokri",
+            "email": "khalifa.chokri@gmail.com"
+        }
+    ]
+}

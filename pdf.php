@@ -2,13 +2,14 @@
 require('pdf/fpdf.php');
 /*
 * Class créé par chokri khalifa, http://khalifa-chokri.com
-* déja modifié
+*
 */
 class PDF extends FPDF{
-var $B;
-var $I;
-var $U;
-var $HREF;
+
+    var $B;
+    var $I;
+    var $U;
+    var $HREF;
 
 function PDF($orientation='P', $unit='mm', $size='A4'){
     // Appel au constructeur parent

@@ -1,14 +1,24 @@
 {
     "name": "chokri/pdf-classe",
     "description": "PDF creator",
+    "type": "library",
     "require": {
-        "uam/tcpdfx": "~4.0"
+        "uam/tcpdfx": "~4.0",
+        "php": "^8.4"
     },
-    "license": "GPL",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
-            "name": "Khalifa chokri",
+            "name": "Khalifa Chokri",
             "email": "khalifa.chokri@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Chokri\\PdfClasse\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "2.0.0"
 }

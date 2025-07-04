@@ -1,5 +1,5 @@
 {
-    "name": "chokri/pdf-classe",
+    "name": "chokri/pdfkit",
     "description": "PDF creator",
     "type": "library",
     "require": {

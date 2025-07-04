@@ -1,7 +1,7 @@
-[![Latest Stable Version](https://poser.pugx.org/chokri/pdf-classe/v/stable.svg)](https://packagist.org/packages/chokri/pdf-classe)
-[![License](https://poser.pugx.org/chokri/pdf-classe/license.svg)](https://packagist.org/packages/chokri/pdf-classe)
+[![Latest Stable Version](https://poser.pugx.org/chokri/pdfkit/v/stable.svg)](https://packagist.org/packages/chokri/pdfkit)
+[![License](https://poser.pugx.org/chokri/pdfkit/license.svg)](https://packagist.org/packages/chokri/pdfkit)
 
-# PDF-classe
+# PDFKit
 
 A simple PHP library for making PDF files. Uses [setasign/fpdf](https://github.com/Setasign/FPDF) and works with PHP 8.4 or newer.
 
@@ -10,7 +10,7 @@ A simple PHP library for making PDF files. Uses [setasign/fpdf](https://github.c
 Install with Composer:
 
 ```bash
-composer require chokri/pdf-classe
+composer require chokri/pdfkit
 ```
 
 ## Basic Example

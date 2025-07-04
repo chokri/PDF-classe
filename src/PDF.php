@@ -1,10 +1,17 @@
 <?php
-namespace Chokri\PdfClasse;
+namespace Chokri\PDF;
+
+// Ensure FPDF is loaded for all consumers
+if (!class_exists('FPDF')) {
+    if (file_exists(__DIR__ . '/../../vendor/setasign/fpdf/fpdf.php')) {
+        require_once __DIR__ . '/../../vendor/setasign/fpdf/fpdf.php';
+    }
+}
 
 /**
  * PDF class created by Chokri Khalifa, http://chokrikhalifa.com
  */
-class PDF extends \FPDF
+class Pdf extends \FPDF
 {
     protected $B;
     protected $I;

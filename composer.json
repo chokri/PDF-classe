@@ -3,7 +3,7 @@
     "description": "PDF creator",
     "type": "library",
     "require": {
-        "uam/tcpdfx": "~4.0",
+        "setasign/fpdf": "^1.8",
         "php": "^8.4"
     },
     "license": "GPL-3.0-or-later",
@@ -15,10 +15,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Chokri\\PdfClasse\\": "src/"
+            "Chokri\\PDF\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "require-dev": {
+        "phpunit/phpunit": "^12.2"
+    }
 }

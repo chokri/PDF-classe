@@ -3,28 +3,28 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use Chokri\PdfClasse\PDF;
-use Chokri\PdfClasse\PDFNoImageHeader;
+use Chokri\PDF\Pdf;
+use Chokri\PDF\PdfNoImageHeader;
 require_once __DIR__ . '/../src/PDFNoImageHeader.php';
 
 class PDFTest extends TestCase
 {
     public function testCanCreatePDFInstance(): void
     {
-        $pdf = new PDFNoImageHeader();
-        $this->assertInstanceOf(PDF::class, $pdf);
+        $pdf = new PdfNoImageHeader();
+        $this->assertInstanceOf(Pdf::class, $pdf);
     }
 
     public function testAddTitlePage(): void
     {
-        $pdf = new PDFNoImageHeader();
+        $pdf = new PdfNoImageHeader();
         $pdf->addTitlePage('Test Title', 'Test Subtitle', 'Test Author');
         $this->assertTrue(method_exists($pdf, 'addTitlePage'));
     }
 
     public function testAddTable(): void
     {
-        $pdf = new PDFNoImageHeader();
+        $pdf = new PdfNoImageHeader();
         $pdf->AddPage();
         $header = ['Col1', 'Col2'];
         $data = [
@@ -37,13 +37,13 @@ class PDFTest extends TestCase
 
     public function testAddImageCentered(): void
     {
-        $pdf = new PDFNoImageHeader();
+        $pdf = new PdfNoImageHeader();
         $this->assertTrue(method_exists($pdf, 'addImageCentered'));
     }
 
     public function testAddPageNumbering(): void
     {
-        $pdf = new PDFNoImageHeader();
+        $pdf = new PdfNoImageHeader();
         $pdf->addPageNumbering();
         $this->assertTrue(method_exists($pdf, 'addPageNumbering'));
     }

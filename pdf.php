@@ -1,10 +1,10 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use Chokri\PdfClasse\PDF;
+use Chokri\PDF\Pdf;
 
 // Example usage:
-$pdf = new PDF();
+$pdf = new Pdf();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
 $pdf->WriteHTML('<b>Hello</b> <i>World</i>!');

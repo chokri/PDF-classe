@@ -18,9 +18,9 @@ composer require chokri/pdf-classe
 ```php
 require 'vendor/autoload.php';
 
-use Chokri\PdfClasse\PDF;
+use Chokri\PDF\Pdf;
 
-$pdf = new PDF();
+$pdf = new Pdf();
 $pdf->addTitlePage('My PDF Title', 'Subtitle', 'Author Name');
 $pdf->addTable(['Col1', 'Col2'], [['A', 'B'], ['C', 'D']]);
 $pdf->addImageCentered('logo.png', 80);

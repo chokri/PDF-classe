@@ -1,10 +1,10 @@
 <?php
-namespace Chokri\PdfClasse;
+namespace Chokri\PDF;
 
 /**
  * PDF class for testing (no image in header)
  */
-class PDFNoImageHeader extends PDF
+class PdfNoImageHeader extends Pdf
 {
     /**
      * Override Header to avoid image dependency in tests.

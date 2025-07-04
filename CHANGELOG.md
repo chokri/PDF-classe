@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2025-07-04
+
+### Added
+
+- `Reader` class for reading PDF files as raw data
+- Unit tests for `Reader`
+
 ## [2.0.0] - 2025-07-04
 
 ### Changed
@@ -12,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Improved documentation and project structure
 
 ## [1.0.0] - 2025-07-04
+
 ### Added
 - Initial PSR-4 structure and Composer support
 - PHP 8.4 compatibility
